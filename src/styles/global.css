@@ -1,15 +1,15 @@
 /* Global styles */
-:root {
-    --background: #1e1e2e; 
-    --background-light: #fdebf3;
-    --button: #78c2ad;
-    --text: #fdebf3;
-    --text-light: #1e1e2e; 
-    --text-link: #78c2ad;
-    --underline: #375a7f;
-    --header: 'Victor Mono';
-    --body: 'Victor Mono', sans-serif; 
-}
+    :root {
+        --background: #1c1c2b; 
+        --background-light: #fdebf3;
+        --button: #78c5af;
+        --text: #ffebf4;
+        --text-light: #191927; 
+        --text-link: #71bea9;
+        --underline: #31557c;
+        --header: 'Victor Mono';
+        --body: 'Victor Mono', sans-serif; 
+    }
 
 html {
     background-color: var(--background);
@@ -22,8 +22,8 @@ html {
     }
 
 body {
-    max-width: 540px;
-    margin: 0 auto;
+    max-width: 1540px;
+    margin: 30px auto;
     text-align: justify;
 }
 
@@ -343,9 +343,18 @@ html.light {
 }
 
 /* Media Query */
+@media only screen and (max-width: 1600px) {
+    body {
+        margin: 40px;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
     body {
-        width: 350px;
+        padding: 10px;
+        margin: 20px;
+        text-align: left;
     }
 
     .navbar {
